@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-gemini-fci",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "Google Gemini node para n8n com autenticação direta (URL e API Key) - FCI",
   "keywords": [
     "n8n-community-node-package",
@@ -25,14 +25,14 @@
   },
   "main": "dist/index.js",
   "scripts": {
-    "build": "rm -rf dist && tsc && cp src/nodes/GoogleGeminiFCI/gemini.svg dist/nodes/GoogleGeminiFCI/",
+    "build": "rm -rf dist && tsc && mkdir -p dist/nodes/GoogleGeminiFCI/icons && cp src/nodes/GoogleGeminiFCI/icons/gemini.svg dist/nodes/GoogleGeminiFCI/icons/",
     "dev": "npm run build",
     "prepublishOnly": "npm run build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "files": [
     "dist",
-    "dist/nodes/GoogleGeminiFCI/gemini.svg"
+    "dist/nodes/GoogleGeminiFCI/icons/gemini.svg"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
